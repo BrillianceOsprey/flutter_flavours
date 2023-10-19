@@ -16,25 +16,14 @@
             ]
         },
         {
-            "name": "Quality",
+            "name": "Staging",
             "request": "launch",
             "type": "dart",
             "args": [
                 "-t",
-                "lib/main_qa.dart",
+                "lib/main_stg.dart",
                 "--flavor",
-                "qa"
-            ]
-        },
-        {
-            "name": "Homologation",
-            "request": "launch",
-            "type": "dart",
-            "args": [
-                "-t",
-                "lib/main_hom.dart",
-                "--flavor",
-                "hom"
+                "stg"
             ]
         },
         {

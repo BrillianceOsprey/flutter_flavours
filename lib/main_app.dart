@@ -8,5 +8,5 @@ Future<void> mainApp(Flavor flavor) async {
   //compilar os icones material de maneira correta?
   WidgetsFlutterBinding.ensureInitialized();
   // configurações do device, cor de tema
-  runApp(App());
+  runApp(const App());
 }

@@ -7,7 +7,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=3.1.3 <4.0.0"
 
 dependencies:
   flutter:
@@ -21,17 +21,19 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^1.0.0
+  flutter_lints: ^3.0.0
 
 flavorizr:
   app:
     android:
       flavorDimensions:  "flavor-type"
-    ios: null
+    ios: 
+      flavorDimensions:  "flavor-type"
+      
   flavors:
     dev:
       app:
-        name: "Flutter Flavor Dev"
+        name: "Dev"
 
       android:
         #bundle identifier
@@ -39,27 +41,18 @@ flavorizr:
 
       ios:
         bundleId: "br.com.flutter.flavor.dev"
-    hom:
+    stg:
       app:
-        name: "Flutter Flavor Hom"
+        name: "Stg"
 
       android:
-        applicationId: "br.com.flutter.flavor.hom"
+        applicationId: "br.com.flutter.flavor.stg"
 
       ios:
-        bundleId: "br.com.flutter.flavor.hom"
-    qa:
-      app:
-        name: "Flutter Flavor qa"
-
-      android:
-        applicationId: "br.com.flutter.flavor.qa"
-
-      ios:
-        bundleId: "br.com.flutter.flavor.hom"
+        bundleId: "br.com.flutter.flavor.stg"
     prod:
       app:
-        name: "Flutter Flavor"
+        name: "Prod"
 
       android:
         applicationId: "br.com.flutter.flavor"

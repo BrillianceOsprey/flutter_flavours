@@ -1,9 +1,7 @@
+import 'dart:async';
+import 'package:flutter/material.dart';
+import 'app.dart';
 
-
-import 'core/flavor/flavors.dart';
-import 'main_app.dart';
-
-void main() {
-  mainApp(Flavor.dev);
+FutureOr<void> main() async {
+  runApp(const App());
 }
-

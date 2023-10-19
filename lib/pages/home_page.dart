@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_flavours/core/flavor/flavors.dart';
 
 class HomePage extends StatelessWidget {
   final String title;
   final String baseUrl;
-  const HomePage({Key? key,required this.title,required this.baseUrl}) : super(key: key);
+  const HomePage({super.key,required this.title,required this.baseUrl});
 
   @override
   Widget build(BuildContext context) {
