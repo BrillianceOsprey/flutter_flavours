@@ -15,7 +15,7 @@ class App extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: _flavorBanner(
-        child: MyHomePage(),
+        child: const MyHomePage(),
         show: kDebugMode,
       ),
     );
